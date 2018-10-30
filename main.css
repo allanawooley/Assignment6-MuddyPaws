@@ -1,0 +1,481 @@
+
+title {
+    display: show;
+}
+/* menu for homepage */
+menu {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  width: 100%;
+  height: 150px;
+  padding: 0px;
+}
+/* menu for product list and
+product detail pages */
+menu.subPages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #B8E986;
+  width: 100%;
+  height: 100px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+body {
+    background-color: #FFF;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0px;
+}
+button {
+  background-color: #B8E986;
+  width: 290px;
+  height: 73px;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 36px;
+  color: #8B572A;
+  align-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* styling for my quantity field */
+input#quantity {
+  width: 55px;
+  height: 44px;
+  border: 3px solid #8E8989;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 30px;
+  color: #417505;
+}
+ul.menuList {
+  width: 90%;
+}
+/*styling for list elements, since
+they are visual displays of product options */
+li {
+  display: inline-block;
+  margin: 5px 23px 5px 23px;
+  font-family: "Didact Gothic", sans-serif;
+  color: #2C3D03;
+  font-size: 14px;
+  width: 83px;
+  border-radius: 20px;
+}
+caption {
+  font-family: "Didact Gothic", sans-serif;
+  color: #417505;
+  font-size: 18px;
+}
+h1 {
+    color: #417505;
+    font-family: "Didact Gothic", sans-serif;
+    text-align: center;
+    font-size: 48px;
+}
+h2 {
+    color: #8B572A;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 36px;
+}
+h3 {
+    color: #417505;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 32px;
+}
+p {
+    color: #2C3D03;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 22px;
+    line-height: 1.3em;
+}
+a {
+  color: #417505;
+  font-family: "Didact Gothic", sans-serif;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0px auto;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: #2C3D03;
+    font-family: "Didact Gothic", sans-serif;
+}
+/* home page logo and tagline */
+.introLogo {
+  display: inline-block;
+  min-width: 80%;
+  padding-left: 10%;
+}
+#cartAndCount {
+  position: relative;
+}
+.shoppingCart {
+  position: absolute;
+  /* display: flex;
+  justify-content: flex-end; */
+  margin-left: -5%;
+  z-index: -1;
+}
+#shoppingCartCount {
+  position: absolute;
+  margin-left: 75%;
+  color: #417505;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 32px;
+  z-index: 1;
+}
+/* homepage banner stretching across the page */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    background-image: url("./images/homeBackground.jpg");
+    background-size: cover;
+    text-align: center;
+    height: 600px;
+    width: 100%;
+}
+/* containing the linked images on the homepage */
+.innerBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.innerBanner img {
+  border: 2px solid #EDE4E4;
+}
+/* styling for Who We Are about section content */
+.about {
+  position: relative;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  line-height: 20px;
+}
+/* for my product list pages */
+.productList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 75%;
+  justify-content: flex-start;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  max-width: 80%;
+}
+.productList img {
+  width: 240px;
+  height: 262px;
+  padding: 60px;
+  padding-top: 10px;
+  border: 2px solid #EDE4E4;
+}
+/* unique div class taking users back
+to product list page */
+.backToShop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+}
+/* largest container div, holding all smaller
+product detail divs */
+.bigWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: -20px;
+}
+/*contains all of the divs on the left side
+of the screen--product name and image */
+.quarterWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  height: 750px;
+}
+.mainProduct img {
+  width: 343px;
+  height: 346px;
+  border: 2px solid #EDE4E4;
+  align-self: center;
+}
+.bonusProductImageRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bonusProductImageRow img {
+  padding: 11px;
+}
+/*div containing all divs and elements on the right half
+of the product detail section--all product options*/
+.threeQuarterWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 53%;
+  height: 750px;
+  align-content: space-between;
+  justify-content: flex-start;
+}
+/*price and quantity*/
+.priceRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 6%;
+}
+/*div containing all details related to product color*/
+.color {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.colorTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin-left: 6%;
+}
+.colorBox {
+  height: 73px;
+  width: 83px;
+  border: 2px solid #EDE4E4;
+}
+.colorAndCaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* div applied when no special treatment was needed
+for elements in a row, like list items of colors and list
+items of sizes */
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+/* size and help link styling */
+.sizeTitleRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 6%;
+}
+button.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* social media section */
+.socialScroll {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  width: 70%;
+}
+.socialScrollTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.socialScrollImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.checkoutWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-top: 2px solid #2C3D03;
+  border-bottom: 2px solid #2C3D03;
+}
+#cartItems{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  padding: 16px 0;
+}
+.cartProduct {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  width: 100%;
+}
+.cartImage {
+  width: 25%;
+}
+.cartImage img{
+  width: 210px;
+  height: 230px;
+  border: 2px solid #EDE4E4;
+}
+#productName {
+  margin-bottom: 0;
+}
+.cartText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 55%;
+  margin: 5%;
+  margin-top: 0;
+}
+.cartText h3 {
+  margin-top: 0;
+  margin-left: 16px;
+}
+.cartProductDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  color: #2C3D03;
+  font-size: 24px;
+  align-items: flex-start;
+  margin-left: 16px;
+}
+.cartProductDetails p {
+  margin-left: 16px;
+}
+.itemSpecifics {
+  display; flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.itemQuantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.itemColor {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+}
+p#colorChosen {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.itemSize {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+}
+p#sizeChosen {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+p#quantityInput {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p#cartProductEdit {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.itemPrice {
+  padding: 0px;
+  margin: 0px;
+  line-height: 0px;
+  color: #2C3D03;
+  font-size: 32px;
+  margin-top: 24px;
+}
+#priceInput {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0px;
+  margin-left: 16px;
+  font-size: 32px;
+}
+.buttonSmall {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  width: 0;
+  cursor: pointer;
+  height: 0;
+  margin-left: 8px;
+  color: #417505;
+  text-decoration: underline;
+}
+.buttonActive {
+  border: 4px solid #2C3D03;
+  height: 73px;
+  width: 83px;
+}
+h3.right {
+  position: absolute;
+}
+#totalCost {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  line-height: 40px;
+  text-align: right;
+  margin-right: 10%;
+  font-size: 32px;
+  color: #417505;
+}
+.checkout {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  line-height: 30px;
+  margin-right: 10%;
+}
+.itemTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
+  line-height: 10px;
+  font-size: 32px;
+}

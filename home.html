@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="shortcut icon" href="./images/pawPrint.png">
+    <title>Muddy Paws Adventure Co.</title>
+</head>
+
+<!-- Because I wanted my main header centered and the shopping cart icon pushed to the far right, I ended up
+creating two divs so I would have more granular control over their placement. Also, the shopping cart links
+to the product detail page. This isn't the way I would do it on the actual site, but we were required to
+include a link to both pages from the homepage for this assignment. The link to the product list page is any
+of the animals under "who are you shopping for"
+-->
+<menu>
+    <div class="introLogo">
+      <h1>Muddy Paws Adventure Gear</h1>
+      <h3 style="text-align: center; font-size: 24px"><img src="./images/pawPrint.png" alt="paw print" width="42" height="33">  Never leave your best friend behind.  <img src="./images/pawPrint.png" alt="paw print" width="42" height="33"></h3>
+    </div>
+    <div class="shoppingCart">
+      <ul class="menuList">
+        <li style="float: right"><a href="file:///Users/allanawooley/Documents/Muddy%20Paws%20Code/cartCheckout.html"><img src="./images/shoppingCart.png" alt="cart icon"></a></li>
+      </ul>
+    </div>
+</menu>
+
+<!-- The main interaction point for users on the homepage. From this banner, they can get to the product
+list page to actually view products-->
+<body>
+  <div class="banner">
+      <h2>Who are you shopping for today?</h2>
+      <div class="innerBanner">
+        <p><a href="file:///Users/allanawooley/Documents/Muddy%20Paws%20Code/productList.html"><img src="./images/homepageCat.png" alt="cat" width="300" height="301"></a></p>
+        <p><a href="file:///Users/allanawooley/Documents/Muddy%20Paws%20Code/productList.html"><img src="./images/homepageDog.png" alt="dog" width="300" height="301"></a></p>
+        <p><a href="file:///Users/allanawooley/Documents/Muddy%20Paws%20Code/productList.html"><img src="./images/homepageCatandDog.png" alt="cat and dog" width="300" height="301"></a></p>
+      </div>
+    </div>
+
+<!--I didn't create a separate page for about because most users never view this page.
+Including it here on the homepage still allows the user to state their mission and perspective.-->
+  <div class="about">
+      <h2>Who we are</h2>
+        <p>We believe in sharing the things we love most with the people we love most. So, when we go out every weekend hiking, camping, rock climbing and exploring the world, we take our pets with us. And it’s why we want to share the products we spend our weekdays designing with you.
+        </p>
+  </div>
+</body>
+
+<!--The footer. This code is the same across all three pages.-->
+  <footer>
+    <div class="about">
+        <p style="color: #B8E986; font-size: 32px;">Contact us<br></p>
+        <p style="color: #B8E986; font-size: 14px;"><img src="./images/cellPhoneIcon.png" alt="cell phone icon">   (123) 456-7890</p>
+        <p style="color: #B8E986; font-size: 14px;"><img src="./images/envelopeIcon.png" alt="envelope icon">   muddypaws@gmail.com</p>
+        <p style="color: #B8E986; font-size: 14px;"><img src="./images/instaIcon.png" alt="instagram icon">   @muddypaws</p>
+      </div>
+    </footer>
+</html>

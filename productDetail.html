@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="shortcut icon" href="./images/pawPrint.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+  <title>Product Detail</title>
+</head>
+<!--special subpage menu-->
+<menu class="subPages">
+    <ul class="menuList">
+      <li><a href="file:///Users/allanawooley/Documents/Muddy%20Paws%20Code/home.html"><img src="./images/muddyPawsLogo.png" alt="logo"></a></li>
+      <li style="float: right; border: 2px solid #8B572A; padding-left: 9px;"><a href="file:///Users/allanawooley/Documents/Muddy%20Paws%20Code/cartCheckout.html"><img class="cartCount" src="./images/shoppingCart.png" alt="cartIcon" width="74" height="57"></a></li>
+    </ul>
+</menu>
+<!--links back to the product list page for customers to continue browsing.-->
+<div class="backToShop">
+  <h2><a style="color: #8B572A; text-decoration: none"; href="file:///Users/allanawooley/Documents/Muddy%20Paws%20Code/productList.html"><img src="./images/greenBackArrow.png" alt="backArrow">Back to Shop</a></h2>
+</div>
+<!--the big div surrounding all of my product details-->
+<body>
+  <div class="bigWrapper">
+    <!--this div contains my product name and images-->
+    <div class="quarterWrapper">
+      <h3 style="float: left" name="Dog Harness">Dog Harness</h3>
+        <div class="mainProduct">
+          <img src='./images/dogHarness-crazyberry.jpg' alt='blue dog harness' id='data-image'>
+        </div>
+        <div class="bonusProductImageRow">
+          <p style="border: 2px solid #EDE4E4;"><a href="#"><img src="./images/dogHarness-fireOrange.png" alt="orange dog harness"></a></p>
+          <p style="border: 2px solid #EDE4E4;"><a href="#"><img src="./images/dogHarness-strawberry.png" alt="red dog harness"></a></p>
+        </div>
+    </div>
+    <!--this div contains all of the actual details about the product. Price, Color,
+    Quantity, Size, Option to Purchase-->
+    <div class="threeQuarterWrapper">
+      <div class="priceRow">
+        <h1 item.price="$20.00">$20.00</h1><h3 style="float: right">Quantity <input id='quantity' name="quantity" type="number" min="1" max="9"></h3>
+      </div>
+      <div class="color">
+        <div class="colorTitle">
+          <h3>Color</h3>
+        </div>
+        <!--This is, admittedly, a hack to get the labels to appear below their corresponding
+        image boxes, but it works-->
+        <div class="row"
+          <ul>
+            <div class="colorAndCaption"><a style="text-decoration: none" href="#"><li style="background:#E04F4F;" class="colorBox strawberryBox" data-color="Strawberry"></li><p>Strawberry</p></a></div>
+            <div class="colorAndCaption"><a style="text-decoration: none" href="#"><li style="background:#2F0C48;" class="colorBox blackberryBox" data-color="Blackberry"></li><p>Blackberry</p></a></div>
+            <div class="colorAndCaption"><a style="text-decoration: none" href="#"><li style="background:#3788F5;" class="colorBox crazyberryBox" data-color="Crazyberry"></li><p>Crazyberry</p></a></div>
+            <div class="colorAndCaption"><a style="text-decoration: none" href="#"><li style="background:#EA5912;" class="colorBox fireOrangeBox" data-color="Fire Orange"></li><p>Fire Orange</p></a></div>
+          </ul>
+        </div>
+      </div>
+      <div class="size">
+        <div class="sizeTitleRow">
+          <h3>Size</h3><p style="float: right"><a href="#">I'm not sure about size.</a></p>
+        </div>
+        <div class="row"
+          <ul id=cartItem>
+            <div class="colorAndCaption"><li style="border: 2px solid #EDE4E4;"><a href="#" data-size="Tiny"><img src="./images/tinyDog.png" alt="tiny dog" class="sizeBox tinyBox"></a></li><p>Tiny</p></div>
+            <div class="colorAndCaption"><li style="border: 2px solid #EDE4E4;"><a href="#" data-size="Small"><img src="./images/smallDog.png" alt="small dog" class="sizeBox smallBox"></a></li><p>Small</p></div>
+            <div class="colorAndCaption"><li style="border: 2px solid #EDE4E4;"><a href="#" data-size="Medium"><img src="./images/mediumDog.png" alt="medium dog" class="sizeBox mediumBox"></a></li><p>Medium</p></div>
+            <div class="colorAndCaption"><li style="border: 2px solid #EDE4E4;"><a href="#" data-size="Large"><img src="./images/largeDog.png" alt="large dog" class="sizeBox largeBox"></a></li><p>Large</p></div>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <button href="#" id="addToCart" data-name="Dog Harness" data-price="20.00">
+          Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--My social scroll, highlighting instances of the product being mentioned on social
+media.-->
+<div class="socialScroll">
+  <div class="socialScrollTitle">
+    <p>Check out Muddy Paws gear in action! Be sure to tag us in your socials for a chance<br>to be featured + earn a discount on your next purchase! <a href="#">@muddypaws</a></p>
+  </div>
+  <div class="socialScrollImages">
+    <p><a href="#"><img src="./images/leftArrow.png" alt="left arrow"></a></p>
+    <p><a href="#"><img src="./images/majesticDogCheat.png" alt="majestic dog in harness"></a></p>
+    <p><a href="#"><img src="./images/catBackpackCheat.png" alt="backpack cat"></a></p>
+    <p><a href="#"><img src="./images/happyPitbullCheat.png" alt="happy dog in harness"></a></p>
+    <p><a href="#"><img src="./images/rightArrow.png" alt="right arrow"></a></p>
+  </div>
+  <div class="row">
+    <button href="#">See More</button></div>
+  </div>
+</div>
+</body>
+
+<footer>
+  <div class="about">
+    <p style="color: #B8E986; font-size: 24px;">Contact us<br></p>
+    <p style="color: #B8E986;"><img src="./images/cellPhoneIcon.png" alt="cell phone icon">   (123) 456-7890</p>
+    <p style="color: #B8E986;"><img src="./images/envelopeIcon.png" alt="envelope icon">   muddypaws@gmail.com</p>
+    <p style="color: #B8E986;"><img src="./images/instaIcon.png" alt="instagram icon">   @muddypaws</p>
+  </div>
+</footer>
+</html>
